@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Reservations</title>
+  <link rel="stylesheet" href="/CSS/hotel.css">
+</head>
+<body>
+ <header>
+  <div class="header-container">
+    <img src="/image/logo.png">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="flight-booking.html">Flight Booking</a></li>
+        <li><a href="hotel.html">Hotel Booking</a></li>
+        <li><a href="insurance.html">Insurance</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="hotel-form">
+    <h2>Hotel Reservation Form</h2>
+    <form>
+      <label for="guestName">Full Name:</label>
+      <input type="text" id="guestName" placeholder="uest name" name="guestName" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" placeholder="[Userid@gmail.com]" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" placeholder="03xx-xxxxxxx" name="phone" required>
+
+      <label for="checkin">Check-In Date:</label>
+      <input type="date" id="checkin" name="checkin" required>
+
+      <label for="checkout">Check-Out Date:</label>
+      <input type="date" id="checkout" name="checkout" required>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" placeholder="Guest number" name="guests" min="1" required>
+
+      <label for="room">Room Type:</label>
+      <select id="room" name="room" required>
+        <option value="">-- Select Room Type --</option>
+        <option value="single">Single Room</option>
+        <option value="double">Double Room</option>
+        <option value="suite">Suite</option>
+        <option value="deluxe">Deluxe Room</option>
+      </select>
+
+      <label for="requests">Special Requests:</label>
+      <textarea id="requests" name="requests" rows="4" placeholder="Any special needs or instructions..."></textarea>
+
+      <button type="submit">Reserve Now</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tourista Consultant. All rights reserved.</p>
+  </footer>
+</body>
+</html>

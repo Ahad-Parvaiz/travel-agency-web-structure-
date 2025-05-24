@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flight Booking</title>
+  <link rel="stylesheet" href="/CSS/bookingform(flight).css">
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <img src="/image/logo.png">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations1.html">Destinations</a></li>
+        <li><a href="destinations.html">Flight Booking</a></li>
+        <li><a href="hotel.html">Hotel Booking</a></li>
+        <li><a href="insurance.html">Insurance</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h2>Flight Booking</h2>
+  <form class="flight-booking-form">
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" placeholder="Enter your name" name="fullName" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" placeholder="Userid@gmail.com" name="email" required>
+
+    <label for="from">From:</label>
+    <input type="text" id="from" placeholder="i.e: Pakistan" name="from" required>
+
+    <label for="to">To:</label>
+    <input type="text" id="to" placeholder="i.e: China" name="to" required>
+
+    <label for="departureDate">Departure Date:</label>
+    <input type="date" id="departureDate" name="departureDate" required>
+
+    <label for="returnDate">Return Date:</label>
+    <input type="date" id="returnDate" name="returnDate">
+
+    <label for="passengers">Number of Passengers:</label>
+    <input type="number" id="passengers" placeholder="Enter passenger" name="passengers" min="1" required>
+
+    <label for="class">Class:</label>
+    <select id="class" name="class" required>
+      <option value="">-- Select Class --</option>
+      <option value="economy">Economy</option>
+      <option value="business">Business</option>
+      <option value="first">First Class</option>
+      <option value="exclusive">Exclusive Class</option>
+    </select>
+  </form>
+
+  <div class="payment-container">
+    <h2>Select Payment Method</h2>
+
+    <div class="payment-options">
+      <label class="payment-label">
+        <input type="radio" name="payment" id="bank" hidden>
+        <span>Bank</span>
+      </label>
+      <label class="payment-label">
+        <input type="radio" name="payment" id="jazzcash" hidden>
+        <span>JazzCash</span>
+      </label>
+      <label class="payment-label">
+        <input type="radio" name="payment" id="ace" hidden>
+        <span>ACE</span>
+      </label>
+    </div>
+
+    <div class="forms">
+      <div class="payment-form bank-form">
+        <h3>Bank Transfer</h3>
+        <input type="text" placeholder="Bank Name" required>
+        <input type="text" placeholder="Account Number" required>
+        <input type="number" placeholder="Amount" required>
+        <input type="text" placeholder="Transaction ID" required>
+        <button class="pay-button">Pay Now</button>
+      </div>
+
+      <div class="payment-form jazzcash-form">
+        <h3>JazzCash</h3>
+        <input type="text" placeholder="Full Name" required>
+        <input type="tel" placeholder="JazzCash Number" required>
+        <input type="number" placeholder="Amount" required>
+        <input type="text" placeholder="Transaction ID" required>
+        <button class="pay-button">Pay Now</button>
+      </div>
+
+      <div class="payment-form ace-form">
+        <h3>ACE Transfer</h3>
+        <input type="text" placeholder="Sender Name" required>
+        <input type="text" placeholder="Country" required>
+        <input type="number" placeholder="Amount" required>
+        <input type="text" placeholder="Reference Code" required>
+        <button class="pay-button">Pay Now</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Tourista Consultant. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
